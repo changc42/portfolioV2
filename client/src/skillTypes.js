@@ -13,4 +13,5 @@ export default {
   HTTP_REST: "HTTP/REST",
   Cpp: "C++",
   Java: "Java",
+  Stripe: "Stripe",
 };

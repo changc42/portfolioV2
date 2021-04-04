@@ -15,13 +15,13 @@ import {
 
 function ProjectCard(props) {
   const { classes, cardDetails } = props;
+  const demoUrl = `https://${cardDetails.subdomain_prefix}.mycalebchang.tech`;
+
   return (
     <div>
       <Card elevation="3" className={classes.Card}>
         <CardActionArea
-          href={
-            cardDetails.demo_url ? cardDetails.demo_url : cardDetails.github_url
-          }
+          href={cardDetails.subdomain_prefix ? demoUrl : cardDetails.github_url}
           target="_blank"
         >
           <CardContent>
@@ -50,13 +50,8 @@ function ProjectCard(props) {
           >
             GitHub
           </Button>
-          {cardDetails.demo_url ? (
-            <Button
-              size="small"
-              color="primary"
-              href={`${cardDetails.demo_url}`}
-              target="_blank"
-            >
+          {cardDetails.subdomain_prefix ? (
+            <Button size="small" color="primary" href={demoUrl} target="_blank">
               View Project
             </Button>
           ) : (

@@ -1,6 +1,15 @@
 import skills from "./skillTypes";
 const domain = "calebchang.tech";
 
+let givMonies = {
+  title: "Giv Monies",
+  image: "givmonies_thumbnail_sqr.png",
+  description: "Give me 10 dollars",
+  skillsUsed: [skills.NodeJS, skills.ExpressJS, skills.Stripe],
+  subdomain_prefix: `givmonies`,
+  github_url: "https://https://github.com/changc42/giv_monies",
+};
+
 let bookfastDetails = {
   title: "Bookfast",
   image: "bookfast.png",
@@ -11,7 +20,7 @@ let bookfastDetails = {
     skills.NodeJS,
     skills.ExpressJS,
   ],
-  demo_url: `bookfast.${domain}`,
+  subdomain_prefix: `bookfast`,
   github_url: "https://github.com/changc42/bookfast",
 };
 
@@ -20,7 +29,7 @@ let calculatorDetails = {
   image: "calculator.png",
   description: "State management and algorithms",
   skillsUsed: [skills.ReactJS],
-  demo_url: `calculator.${domain}`,
+  subdomain_prefix: `calculator`,
   github_url:
     "https://github.com/changc42/personalPortfolio/tree/master/projects/calculator",
 };
@@ -31,7 +40,7 @@ let dragNDropDetails = {
   description:
     "State management and drag-and-drop (cursor clicks only. Not for mobile)",
   skillsUsed: [skills.ReactJS],
-  demo_url: `dragndrop.${domain}`,
+  subdomain_prefix: `dragndrop`,
   github_url:
     "https://github.com/changc42/personalPortfolio/tree/master/projects/dragndrop",
 };
@@ -41,7 +50,7 @@ let emailRaterDetails = {
   image: "emailRater.PNG",
   description: "HTTP/REST APIs and cookie-session management",
   skillsUsed: [skills.ReactJS, skills.NodeJS, skills.HTTP_REST],
-  demo_url: `emailrater.${domain}`,
+  subdomain_prefix: `emailrater`,
   github_url:
     "https://github.com/changc42/personalPortfolio/tree/master/projects/emailrater",
 };
@@ -58,7 +67,7 @@ let emailyDetails = {
     skills.Stripe,
     skills.ExpressJS,
   ],
-  demo_url: `emaily.${domain}`,
+  subdomain_prefix: `emaily`,
   github_url: "https://github.com/changc42/node-react-course",
 };
 
@@ -67,7 +76,7 @@ let weatherappDetails = {
   image: "newWeatherPic.png",
   description: "What's the weather in your local area?",
   skillsUsed: [skills.HTML, skills.CSS, skills.JavaScript, skills.HTTP_REST],
-  demo_url: `weatherapp.${domain}`,
+  subdomain_prefix: `weatherapp`,
   github_url: "https://github.com/changc42/weatherapp",
 };
 
@@ -76,7 +85,7 @@ let pokemonwarDetails = {
   image: "pokemonwar.PNG",
   description: "State management and responsive design",
   skillsUsed: [skills.ReactJS],
-  demo_url: `pokemonwar.${domain}`,
+  subdomain_prefix: `pokemonwar`,
   github_url:
     "https://github.com/changc42/personalPortfolio/tree/master/projects/pokemonwar",
 };
@@ -96,9 +105,10 @@ export default [
   // bookfastDetails,
   emailRaterDetails,
   dragNDropDetails,
-  cpuSchedulerDetails,
-  memoryAllocatorDetails,
-  semanticAnalyzerDetails,
+  // cpuSchedulerDetails,
+  // memoryAllocatorDetails,
+  // semanticAnalyzerDetails,
   personalPortfolioDetails,
+  givMonies,
   // weatherappDetails,
 ];
