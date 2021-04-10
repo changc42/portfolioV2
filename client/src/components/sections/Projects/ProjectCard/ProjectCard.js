@@ -15,7 +15,7 @@ import {
 
 function ProjectCard(props) {
   const { classes, cardDetails } = props;
-  const demoUrl = `https://${cardDetails.subdomain_prefix}.mycalebchang.tech`;
+  const demoUrl = `https://${cardDetails.subdomain_prefix}.caleb.directory`;
 
   return (
     <div>
