@@ -1,5 +1,4 @@
 import skills from "./skillTypes";
-const domain = "calebchang.tech";
 
 let givMonies = {
   title: "Giv Monies",
