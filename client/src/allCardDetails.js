@@ -98,16 +98,17 @@ let personalPortfolioDetails = {
 };
 
 export default [
+  givMonies,
   pokemonwarDetails,
   calculatorDetails,
   // emailyDetails,
   // bookfastDetails,
-  emailRaterDetails,
+  // emailRaterDetails,
   dragNDropDetails,
   // cpuSchedulerDetails,
   // memoryAllocatorDetails,
   // semanticAnalyzerDetails,
   personalPortfolioDetails,
-  givMonies,
+
   // weatherappDetails,
 ];
